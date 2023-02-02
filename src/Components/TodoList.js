@@ -6,17 +6,17 @@ import ListItemText from '@mui/material/ListItemText';
 import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { BookmarkBorder, Favorite, FavoriteBorder } from '@mui/icons-material';
-import { red,blue } from '@mui/material/colors';
+import { BookmarkBorder, Bookmark } from '@mui/icons-material';
+import { blue } from '@mui/material/colors';
 
 const TodoList = ({ todos, deleteTodo }) => (
     <List>
         {todos.map((todo, index) => (
             <ListItem key={index.toString()} dense button>
-               <Checkbox icon={<BookmarkBorder />} checkedIcon={<Favorite />} sx={{
+               <Checkbox icon={<BookmarkBorder />} checkedIcon={<Bookmark />} sx={{
     color: blue[800],
     '&.Mui-checked': {
-      color: red[600],
+      color: blue[600],
     },
   }}/>
                 <ListItemText primary={todo} />
