@@ -1,6 +1,6 @@
 OutLook:
 
-![image](https://user-images.githubusercontent.com/15225177/216287198-e965f6a8-170c-442d-89d9-e4ed0d3953e0.png)
+![image](https://user-images.githubusercontent.com/15225177/216287844-3b3819ed-d7f3-44bd-808b-785917f27c9b.png)
 
 ***********************************************************************************************
 # Getting Started with Create React App
