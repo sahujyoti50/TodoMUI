@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import {TextField} from '@mui/material';
+import { Button, IconButton, TextField } from '@mui/material';
+import { Edit, Save } from '@mui/icons-material';
 
-const TodoForm = ({ saveTodo }) => {
-  const [value, setValue] = useState('');
+const TodoForm = ({ saveTodo, value, setValue}) => {
 
   return (
     <form
@@ -11,6 +11,7 @@ const TodoForm = ({ saveTodo }) => {
         saveTodo(value);
         setValue('');
       }}
+      style={{ display: 'inline-flex' }}
     >
       <TextField
         variant="outlined"
@@ -20,6 +21,7 @@ const TodoForm = ({ saveTodo }) => {
           setValue(event.target.value);
         }}
         value={value}
+
       />
     </form>
   );
