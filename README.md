@@ -1,5 +1,9 @@
 OutLook:
 
+Added Edit Feature:
+
+![image](https://user-images.githubusercontent.com/15225177/216710043-7e10231d-0d4e-45b2-b350-6ba0f2d809ff.png)
+
 ![image](https://user-images.githubusercontent.com/15225177/216307902-72b3af4c-f569-4647-b07c-b41298201795.png)
 
 ![image](https://user-images.githubusercontent.com/15225177/216308088-182e2891-68f3-442c-8021-6fa964789c04.png)
