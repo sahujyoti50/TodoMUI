@@ -1,5 +1,8 @@
 OutLook:
 
+Filer Drop down has been added:
+![image](https://user-images.githubusercontent.com/15225177/217218437-6812f4a5-f4ea-49e1-a5f8-ffa9a88b5f4f.png)
+
 Added Edit Feature:
 ![image](https://user-images.githubusercontent.com/15225177/216710043-7e10231d-0d4e-45b2-b350-6ba0f2d809ff.png)
 
