@@ -11,10 +11,10 @@ import { Bookmark, BookmarkBorder } from '@mui/icons-material';
 import { blue } from '@mui/material/colors';
 import { Card } from '@mui/material';
 
-const TodoList = ({ todos, deleteTodo, setTodos,handleEditClick }) => {
+const TodoList = ({ selectedTodos, deleteTodo, setSelectedTodos,handleEditClick,setTodos }) => {
     function handleToggleTodo(todo) {
 
-        const updatedTodos = todos.map((t) =>
+        const updatedTodos = selectedTodos.map((t) =>
             t.id === todo.id
                 ? {
                     ...t,
@@ -23,13 +23,14 @@ const TodoList = ({ todos, deleteTodo, setTodos,handleEditClick }) => {
                 : t
         );
         setTodos(updatedTodos);
+        setSelectedTodos(updatedTodos);
     }
-    if (!todos.length) {
-        return <p style={{color:"teal" ,fontSize: "25px", fontFamily: "arial",marginTop:"100px" }}>You Have No Todos Left!!</p>;
-    }
+    // if (!todos.length) {
+    //     return <p style={{color:"teal" ,fontSize: "25px", fontFamily: "arial",marginTop:"100px" }}>You Have No Todos Left!!</p>;
+    // }
     return (
         <Card sx={{ maxWidth: 500, margin: "auto" }}>
-            {todos.map((todo) => (
+            {selectedTodos.map((todo) => (
                 <List key={todo.id} dense >
                     <ListItem>
                         <Checkbox icon={<BookmarkBorder />} checkedIcon={<Bookmark />} sx={{
