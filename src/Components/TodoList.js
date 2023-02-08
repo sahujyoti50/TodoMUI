@@ -11,6 +11,7 @@ import { Bookmark, BookmarkBorder } from '@mui/icons-material';
 import { blue } from '@mui/material/colors';
 import { Card } from '@mui/material';
 
+
 const TodoList = ({ selectedTodos, deleteTodo, setSelectedTodos,handleEditClick,setTodos }) => {
     function handleToggleTodo(todo) {
 
@@ -25,9 +26,11 @@ const TodoList = ({ selectedTodos, deleteTodo, setSelectedTodos,handleEditClick,
         setTodos(updatedTodos);
         setSelectedTodos(updatedTodos);
     }
-    // if (!todos.length) {
-    //     return <p style={{color:"teal" ,fontSize: "25px", fontFamily: "arial",marginTop:"100px" }}>You Have No Todos Left!!</p>;
-    // }
+
+
+    if (!selectedTodos.length) {
+       return <p>You Have No Todos Left!!</p>;
+     }
     return (
         <Card sx={{ maxWidth: 500, margin: "auto" }}>
             {selectedTodos.map((todo) => (
@@ -45,7 +48,7 @@ const TodoList = ({ selectedTodos, deleteTodo, setSelectedTodos,handleEditClick,
                                 textDecoration: todo.done ? "line-through" : ""
                             }} />
                         <ListItemText primary={todo.done ? "Completed" : "Incompleted"} />
-
+                     {/* k */}
                     </ListItem>
                     <ListItemSecondaryAction>
                         <IconButton

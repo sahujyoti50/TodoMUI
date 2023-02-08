@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
-import { Button, IconButton, TextField } from '@mui/material';
-import { Edit, Save } from '@mui/icons-material';
-
-const TodoForm = ({ saveTodo, value, setValue}) => {
-
+import React from 'react';
+import { TextField } from '@mui/material';
+const TodoForm = ({ autoFocus, saveTodo, value, setValue }) => {
   return (
     <form
       onSubmit={(event) => {
@@ -21,7 +18,7 @@ const TodoForm = ({ saveTodo, value, setValue}) => {
           setValue(event.target.value);
         }}
         value={value}
-
+        autoFocus
       />
     </form>
   );

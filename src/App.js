@@ -1,7 +1,7 @@
 import './App.css';
 import TodoForm from './Components/TodoForm';
 import { Button, IconButton, List, TextField, Typography } from '@mui/material';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import TodoList from './Components/TodoList';
 import SearchBar from './Components/SearchBar';
 import { Cancel, Save } from '@mui/icons-material';
@@ -15,6 +15,7 @@ function App() {
   const [currentTodo, setCurrentTodo] = useState({});
   const [isEditing, setIsEditing] = useState(false);
   const [filter, setFilter] = useState('all');
+
 
   const searchHandler = (input) => {
     const filteredData = todos.filter((data) => { return data.name.toLowerCase().includes(input.toLowerCase()) });
@@ -64,7 +65,7 @@ function App() {
       }
     )
     setSelectedTodos(filterTodoList);
-  }, [filter,todos]);
+  }, [filter, todos]);
 
   return (
     <div className="App">
@@ -109,6 +110,7 @@ function App() {
           </form>
         </List>
       ) : <TodoForm
+
         value={value}
         setValue={setValue}
         saveTodo={(todoText) => {
