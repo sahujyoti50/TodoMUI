@@ -2,7 +2,7 @@ OutLook:
 Added Focus on Input Field:
 ![image](https://user-images.githubusercontent.com/15225177/217473932-f7ca0538-9478-4cf4-9cae-50f1dd075159.png)
 
-Filer Drop down has been added:
+Filter Drop down has been added for all,completed and incompleted todos:
 ![image](https://user-images.githubusercontent.com/15225177/217218437-6812f4a5-f4ea-49e1-a5f8-ffa9a88b5f4f.png)
 
 Added Edit Feature:
