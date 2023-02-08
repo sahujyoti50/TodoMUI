@@ -1,6 +1,6 @@
 OutLook:
 Added Focus on Input Field:
-![image](https://user-images.githubusercontent.com/15225177/217473746-f72470c8-146c-49dc-b662-d28536173aa0.png)
+![image](https://user-images.githubusercontent.com/15225177/217473932-f7ca0538-9478-4cf4-9cae-50f1dd075159.png)
 
 Filer Drop down has been added:
 ![image](https://user-images.githubusercontent.com/15225177/217218437-6812f4a5-f4ea-49e1-a5f8-ffa9a88b5f4f.png)
